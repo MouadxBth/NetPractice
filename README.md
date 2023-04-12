@@ -334,6 +334,7 @@ The answers can then be any address, as long as they meet the following conditio
 - The network address (first 30 bits) must be identical for _Client D_ and _Client C_.
 - The host bits (last 2 bits) cannot be all 1, nor all 0.
 - _Client D_ and _Client C_ do not have identical IP addresses.
+- The IP address range 127.0.0.0/8 is reserved for loopback purposes, which means that any IP address in this range is used to refer to the device itself, and not for communication with other devices on a network, therefore, avoid using an ip address from this range.
 
 <div align="right">
   <b><a href="#top">↥ back to top</a></b>
